@@ -7,6 +7,7 @@ Thank you for your interest in contributing to Inspiraspace! We appreciate your 
 - [Code of Conduct](#code-of-conduct)
 - [Getting Started](#getting-started)
 - [Submitting Contributions](#submitting-contributions)
+- [Conventional Commit Messages](#conventional-commit-messages)
 - [Coding Guidelines](#coding-guidelines)
 - [Testing](#testing)
 - [Documentation](#documentation)
@@ -51,11 +52,11 @@ Before you start, please read and abide by our [Code of Conduct](CODE_OF_CONDUCT
 
 2. **Make Changes:** Develop and test your changes in the new branch.
 
-3. **Commit Your Changes:** Commit your changes with clear and concise messages.
+3. **Commit Your Changes:** Commit your changes with [conventional commit messages](#conventional-commit-messages).
 
     ```bash
     git add .
-    git commit -m "Add a descriptive commit message"
+    git commit -m "feat: add new feature"
     ```
 
 4. **Sync with Upstream:** Keep your branch updated with the latest upstream changes.
@@ -72,6 +73,20 @@ Before you start, please read and abide by our [Code of Conduct](CODE_OF_CONDUCT
     ```
 
 6. **Submit a Pull Request:** Create a pull request from your branch to the main repository.
+
+## Conventional Commit Messages
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) style for commit messages. Each commit message should have a structured format:
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+Examples of commit types include `feat`, `fix`, `chore`, `docs`, `style`, and more. Using this convention helps in generating changelogs and maintaining a consistent commit history.
 
 ## Coding Guidelines
 
